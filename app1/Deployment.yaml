@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata: 
+  name: app1
+  namespace: gsk
+
+spec:
+  replicas: 2
+  template:
+    metadata:
+      name: app1
+    spec: 
+      containers:
+      - name: app1
+        image: httpd
