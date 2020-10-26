@@ -10,7 +10,12 @@ spec:
   template:
     metadata:
       name: app1
+      labels:
+        client: ctech
     spec: 
       containers:
       - name: app1
         image: httpd
+  selector: 
+    matchLabels:
+      client: ctech
