@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 
 metadata:
-  name: app1service
+  name: app1-service
   namespace: gsk
 
 spec:
@@ -11,7 +11,14 @@ spec:
   - name: http
     protocol: TCP
     port: 80
-    nodePort: 30012 
+    nodePort: 30012
+  - name: https
+    protocol: TCP
+    port: 443
+    nodePort: 30013
+  externalIPs:
+  - 123.45.67.89
+  - 123.45.67.89 
   selector:
     client: "GSK_tech"
   
