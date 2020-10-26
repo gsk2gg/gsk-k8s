@@ -11,11 +11,11 @@ spec:
     metadata:
       name: app1
       labels:
-        client: ctech
+        client: "GSK_tech"
     spec: 
       containers:
       - name: app1
         image: httpd
   selector: 
     matchLabels:
-      client: ctech
+      client: "GSK_tech"
