@@ -18,3 +18,7 @@ docker run -d -p 8080:8080 tomcat-img
 
 ## To access running Docker container
 docker exec -it d12d16d54771 /bin/bash
+
+## Docker push image
+docker tag tomcat-img:latest gsk2gg/tomcat-img:latest
+docker push gsk2gg/tomcat-img:latest
