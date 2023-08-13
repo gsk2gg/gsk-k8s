@@ -15,4 +15,6 @@ RUN tar -xvzf ${TOMCAT_VERSION}
 RUN rm ${TOMCAT_VERSION}
 RUN mv apache-tomcat-10.1.9 tomcat
 
+COPY sample.war /opt/tomcat/webapps/
+
 CMD /opt/tomcat/bin/catalina.sh run

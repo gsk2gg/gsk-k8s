@@ -15,3 +15,6 @@ docker build --output type=tar,dest=out.tar .
 
 ## Run docker image in detached mode (backgroud)
 docker run -d -p 8080:8080 tomcat-img
+
+## To access running Docker container
+docker exec -it d12d16d54771 /bin/bash
