@@ -20,5 +20,5 @@ docker run -d -p 8080:8080 tomcat-img
 docker exec -it d12d16d54771 /bin/bash
 
 ## Docker push image
-docker tag tomcat-img:latest gsk2gg/tomcat-img:latest
+docker tag tomcat-img:latest gsk2gg/tomcat-img:latest 
 docker push gsk2gg/tomcat-img:latest
