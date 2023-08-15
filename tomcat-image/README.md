@@ -24,3 +24,14 @@ docker tag tomcat-img:latest gsk2gg/tomcat-img:latest
 
 
 docker push gsk2gg/tomcat-img:latest
+
+
+
+# Google Cloud:
+### Compute Options
+- Compute Engine
+- Kubernetes
+- App Engine
+- Cloud Run
+- Cloud Function
+![Alt text](image.png)
