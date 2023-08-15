@@ -8,8 +8,8 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("qwiklabs-gcp-04-4ad870f074de-906f8f410234.json")
-  project     = "qwiklabs-gcp-04-4ad870f074de"
+  credentials = file("qwiklabs.json")
+  project     = "qwiklabs-gcp-02-ff61e6ee81a0"
   region      = "us-central1"
   zone        = "us-central1-a"
 }
